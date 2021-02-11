@@ -1,9 +1,13 @@
-import Header from "../components/Header";
+import Nav from "../components/Nav";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Head>
+        <title>Next.js App</title>
+      </Head>
+      <Nav />
       <h1>Home</h1>
     </>
   );
