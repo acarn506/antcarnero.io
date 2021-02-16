@@ -13,6 +13,7 @@ interface Country {
 }
 
 export interface Countries {
+  name: string;
   country: Country[];
 }
 
