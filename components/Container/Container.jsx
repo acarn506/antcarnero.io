@@ -1,6 +1,7 @@
 import Nav from "../Nav/Nav";
 import Head from "next/head";
 import Image from "next/image";
+import Footer from "../Footer/Footer";
 
 export default function Container(props) {
   const { children, ...customMeta } = props;
@@ -19,7 +20,10 @@ export default function Container(props) {
         <Image src="/vercel.svg" alt="me" width="80" height="80" />
       </article>
       <Nav />
-      <main>{children}</main>
+      <main>
+        {children}
+        <Footer />
+      </main>
     </>
   );
 }
