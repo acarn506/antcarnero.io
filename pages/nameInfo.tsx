@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Nav from "../components/Nav";
-import AgeDisplay from "../components/AgeDisplay";
+import NameDisplay from "../components/NameDisplay";
+import Container from "../components/Container/Container";
 
 export interface Gender {
   gender: "string";
@@ -40,27 +40,26 @@ export default function adify() {
   }
 
   const content = show ? (
-    <AgeDisplay name={name} age={age} gender={gender} countries={countries} />
+    <NameDisplay name={name} age={age} gender={gender} countries={countries} />
   ) : null;
 
   return (
-    <>
-      <Nav />
+    <Container title="Name Info">
+      <section className="submitBox">
+        <label htmlFor="name">Simply enter your name:</label>
+        <input
+          type="text"
+          value={name}
+          onChange={(event: React.ChangeEvent<HTMLInputElement>): void =>
+            setName(event.target.value)
+          }
+        />
+        <button type="submit" onClick={name ? () => ageHandler() : null}>
+          Submit
+        </button>
+      </section>
 
-      <label htmlFor="name">Simply enter your name:</label>
-      <input
-        type="text"
-        value={name}
-        onChange={(event: React.ChangeEvent<HTMLInputElement>): void =>
-          setName(event.target.value)
-        }
-      />
-      <button type="submit" onClick={() => ageHandler()}>
-        Submit
-      </button>
-
-      <h1>{`Name: ${name}`}</h1>
       {content}
-    </>
+    </Container>
   );
 }

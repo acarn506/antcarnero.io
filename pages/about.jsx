@@ -1,10 +1,9 @@
-import Nav from "../components/Nav";
+import Container from "../components/Container/Container";
 
 export default function About() {
   return (
-    <>
-      <Nav />
+    <Container title="About Page">
       <h1>About</h1>
-    </>
+    </Container>
   );
 }

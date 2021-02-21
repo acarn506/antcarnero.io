@@ -1,14 +1,9 @@
-import Nav from "../components/Nav";
-import Head from "next/head";
+import Container from "../components/Container/Container";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Next.js App</title>
-      </Head>
-      <Nav />
+    <Container>
       <h1>Home</h1>
-    </>
+    </Container>
   );
 }

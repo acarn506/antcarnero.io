@@ -1,0 +1,13 @@
+.nav {
+  position: fixed;
+  width: 50%;
+  top: 0;
+  margin-top: 20px;
+}
+
+.navItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+}

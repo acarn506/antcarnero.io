@@ -1,9 +1,10 @@
 import Link from "next/link";
+import styles from "./Nav.module.css";
 
 export default function Nav() {
   return (
-    <header>
-      <ul>
+    <header className={styles.nav}>
+      <ul className={styles.navItems}>
         <li>
           <Link href="/">
             <a>Home</a>
@@ -15,8 +16,8 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="/agify">
-            <a>Agify</a>
+          <Link href="/nameInfo">
+            <a>Name Info</a>
           </Link>
         </li>
       </ul>

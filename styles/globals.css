@@ -4,6 +4,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -13,4 +17,27 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  margin-top: 50px;
+}
+
+/* Home Page */
+.logo {
+  position: fixed;
+  top: 0;
+  left: 100px;
+  margin-top: 5px;
+}
+
+/*   nameInfo Page  */
+
+.submitBox {
+  position: relative;
+  top: 100px;
 }
