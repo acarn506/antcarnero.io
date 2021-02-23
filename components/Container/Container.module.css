@@ -1,0 +1,13 @@
+.heading {
+  position: relative;
+  width: 100vw;
+  height: 140px;
+  background-color: bisque;
+}
+
+.logo {
+  position: absolute;
+  left: 130px;
+
+  margin-top: 30px;
+}
