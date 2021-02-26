@@ -25,7 +25,7 @@ export default function Container(props) {
         <Nav />
       </section>
 
-      <main>
+      <main className={styles.main}>
         {children}
         <Footer />
       </main>

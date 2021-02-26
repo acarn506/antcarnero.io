@@ -39,6 +39,10 @@ export default function adify() {
     }
   }
 
+  const nameChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+  };
+
   const content = show ? (
     <NameDisplay name={name} age={age} gender={gender} countries={countries} />
   ) : null;
@@ -47,13 +51,7 @@ export default function adify() {
     <Container title="Name Info">
       <section className="submitBox">
         <label htmlFor="name">Simply enter your name:</label>
-        <input
-          type="text"
-          value={name}
-          onChange={(event: React.ChangeEvent<HTMLInputElement>): void =>
-            setName(event.target.value)
-          }
-        />
+        <input type="text" value={name} onChange={nameChangeHandler} />
         <button type="submit" onClick={name ? () => ageHandler() : null}>
           Submit
         </button>

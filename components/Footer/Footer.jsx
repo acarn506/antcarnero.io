@@ -8,22 +8,39 @@ const ExternalLink = ({ href, children }) => {
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <section>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-      </section>
+      <div className={styles.footerContent}>
+        <h2>Socials</h2>
+        <ul className={styles.links}>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a>About</a>
+            </Link>
+          </li>
+          <li>
+            <ExternalLink href="https://github.com/acarn506">
+              GitHub
+            </ExternalLink>
+          </li>
+          <li>
+            {" "}
+            <ExternalLink href="https://www.linkedin.com/in/anthony-carnero">
+              Linkedin
+            </ExternalLink>
+          </li>
+          <li>
+            <ExternalLink href="https://vizbyd3.com">VizbyD3</ExternalLink>
+          </li>
+        </ul>
+      </div>
 
-      <section>
-        <ExternalLink href="https://github.com/acarn506">GitHub</ExternalLink>
-        <ExternalLink href="https://www.linkedin.com/in/anthony-carnero">
-          Linkedin
-        </ExternalLink>
-        <ExternalLink href="https://vizbyd3.com">VizbyD3</ExternalLink>
-      </section>
+      <div className={styles.footerBottom}>
+        <p> Copyright © 2021 Next.js App. Designed by Anthony Carnero </p>
+      </div>
     </footer>
   );
 }

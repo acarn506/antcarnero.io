@@ -11,3 +11,9 @@
 
   margin-top: 30px;
 }
+
+.main {
+  position: relative;
+  width: 100vw;
+  height: 600px;
+}
