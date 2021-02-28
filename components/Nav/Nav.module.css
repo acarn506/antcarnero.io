@@ -1,16 +1,35 @@
-.nav {
+.header {
   position: absolute;
-  width: 50%;
-
-  margin-top: 20px;
-  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  width: 100%;
 }
 
-.navItems {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0;
-  margin: 30px 50px 0px;
+.navContent {
+}
+
+.links {
+  list-style: none;
+}
+
+.links li {
+  display: inline-block;
+  padding: 0px 20px;
   font-size: 18px;
+  font-weight: bold;
+}
+
+.links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.links li a:hover {
+  color: rgb(39, 113, 224);
+}
+
+.logo {
+  position: absolute;
+  cursor: pointer;
 }

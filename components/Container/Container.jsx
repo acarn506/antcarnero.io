@@ -1,6 +1,6 @@
 import Nav from "../Nav/Nav";
 import Head from "next/head";
-import Image from "next/image";
+
 import Footer from "../Footer/Footer";
 
 import styles from "./Container.module.css";
@@ -19,9 +19,6 @@ export default function Container(props) {
         <title>{meta.title}</title>
       </Head>
       <section className={styles.heading}>
-        <article className={styles.logo}>
-          <Image src="/vercel.svg" alt="me" width="80" height="80" />
-        </article>
         <Nav />
       </section>
 
