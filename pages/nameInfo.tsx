@@ -49,13 +49,22 @@ export default function adify() {
 
   return (
     <Container title="Name Info">
-      <section className="submitBox">
-        <label htmlFor="name">Simply enter your name:</label>
-        <input type="text" value={name} onChange={nameChangeHandler} />
-        <button type="submit" onClick={name ? () => ageHandler() : null}>
+      <div className="mb-5 pt-0 flex flex-row w-3/5">
+        <input
+          type="text"
+          value={name}
+          onChange={nameChangeHandler}
+          placeholder="Simply enter your name"
+          className="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-2xl shadow outline-none focus:outline-none focus:shadow-outline w-full"
+        />
+        <button
+          className="mx-3.5 text-black-700 bg-green-100 rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-1/6 hover:bg-green-500"
+          type="submit"
+          onClick={name ? () => ageHandler() : null}
+        >
           Submit
         </button>
-      </section>
+      </div>
 
       {content}
     </Container>

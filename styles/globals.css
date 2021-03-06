@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -19,32 +23,6 @@ a {
   box-sizing: border-box;
 }
 
-li {
-  list-style: none;
-}
-
 main {
   margin-top: 50px;
-}
-
-/*    Home Page      */
-.intro {
-  margin: 5px 0px 5px;
-}
-
-.welcome {
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.name {
-  font-size: 50px;
-  font-family: "Ubuntu", sans-serif;
-  margin: 0px;
-}
-
-/*   nameInfo Page  */
-
-.submitBox {
-  position: relative;
-  top: 100px;
 }
