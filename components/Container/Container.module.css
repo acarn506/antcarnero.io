@@ -15,7 +15,7 @@
 .main {
   position: relative;
   width: 100vw;
-  height: 800px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
 

@@ -12,6 +12,7 @@ export default function BlogPage({ title, date, content }: Props) {
     <Container title={title}>
       <h1>{title}</h1>
       <div>{content}</div>
+      <div>{date}</div>
     </Container>
   );
 }

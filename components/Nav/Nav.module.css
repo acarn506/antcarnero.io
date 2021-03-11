@@ -7,25 +7,10 @@
   width: 100%;
 }
 
-.navContent {
-}
-
-.links {
-}
-
 .links li {
   display: inline-block;
   padding: 0px 20px;
   font-size: 18px;
-  font-weight: bold;
-}
-
-.links li a {
-  transition: all 0.3s ease 0s;
-}
-
-.links li a:hover {
-  color: rgb(39, 113, 224);
 }
 
 .logo {

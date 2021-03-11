@@ -6,20 +6,26 @@ import Link from "next/link";
 export default function Blog() {
   return (
     <Container title="Blog Page">
-      <h1>My Blogs</h1>
-      <div>
+      <h1 className=" font-bold text-5xl">My Blogs</h1>
+      <div className="my-5 flex flex-col justify-center mx-10">
         {blogPosts.map(blog => (
-          <div key={blog.slug}>
-            <div>
-              <Link href={`/blog/${blog.slug}`}>
-                <a>{blog.title}</a>
-              </Link>
-            </div>
-            <div>{blog.date}</div>
-            <div>{blog.content}</div>
-          </div>
+          <BlogList key={blog.slug} {...blog} />
         ))}
       </div>
     </Container>
+  );
+}
+
+function BlogList({ title, slug, date, content }) {
+  return (
+    <div class="my-5">
+      <div>
+        <Link href={`/blog/${slug}`}>
+          <a>{title}</a>
+        </Link>
+      </div>
+      <div>{date}</div>
+      <div>{content}</div>
+    </div>
   );
 }

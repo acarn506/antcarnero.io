@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a {
+    @apply text-black hover:text-blue-600 font-bold transition-all delay-150 duration-300;
+  }
+}
 html,
 body {
   padding: 0;
