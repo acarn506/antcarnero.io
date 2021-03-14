@@ -1,21 +1,7 @@
-.heading {
-  position: relative;
-  width: 100vw;
-  height: 140px;
-  background-color: #dedada;
-}
-
-.logo {
-  position: absolute;
-  left: 130px;
-
-  margin-top: 30px;
-}
-
 .main {
-  position: relative;
   width: 100vw;
-  height: 1000px;
+
+  padding-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
 

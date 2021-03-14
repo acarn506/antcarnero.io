@@ -4,19 +4,30 @@
 
 @layer base {
   a {
-    @apply text-black hover:text-blue-600 font-bold transition-all delay-150 duration-300;
+    @apply text-black hover:text-blue-600 font-bold transition-all delay-150 duration-300 text-lg;
   }
 }
 html,
 body {
   padding: 0;
   margin: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 185px;
+}
+
+#__next {
+  min-height: 100vh;
 }
 
 a {

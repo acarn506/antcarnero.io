@@ -1,10 +1,12 @@
 .header {
-  position: absolute;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
-  width: 100%;
+
+  top: 0;
+  background-color: #dedada;
 }
 
 .links li {

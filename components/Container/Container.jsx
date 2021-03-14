@@ -18,14 +18,11 @@ export default function Container(props) {
       <Head>
         <title>{meta.title}</title>
       </Head>
-      <section className={styles.heading}>
-        <Nav />
-      </section>
 
-      <main className={styles.main}>
-        {children}
-        <Footer />
-      </main>
+      <Nav />
+
+      <main className={styles.main}>{children}</main>
+      <Footer />
     </>
   );
 }
