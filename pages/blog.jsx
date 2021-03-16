@@ -20,16 +20,14 @@ export default function Blog() {
 
 function BlogList({ title, slug, date, content }) {
   return (
-    <div class="my-5 p-5 border border-gray-100 shadow rounded hover:shadow-lg hover:border-gray-200 hover:bg-blue-50 transition duration-500 ease-in-out">
-      <div>
-        <Link href={`/blog/${slug}`}>
-          <a>{title}</a>
-        </Link>
+    <Link href={`/blog/${slug}`}>
+      <div class="my-5 p-5 border border-gray-100 shadow rounded hover:shadow-lg hover:border-gray-200 hover:bg-blue-50 transition duration-500 ease-in-out">
+        <a>{title}</a>
+        <div className="my-1 text-gray-600 text-sm">
+          {format(parseISO(date), "MMMM do, uuu")}
+        </div>
+        <div>{content}</div>
       </div>
-      <div className="my-1 text-gray-600 text-sm">
-        {format(parseISO(date), "MMMM do, uuu")}
-      </div>
-      <div>{content}</div>
-    </div>
+    </Link>
   );
 }
