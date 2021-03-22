@@ -12,7 +12,7 @@ export default function Nav() {
         height="80"
         className={styles.logo}
       />
-      <nav className={styles.navContent}>
+      <nav>
         <ul className={styles.links}>
           <li>
             <Link href="/">
